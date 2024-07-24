@@ -1,4 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import Layout from "../../components/Layout";
+import Head from "next/head";
 
 export const metadata = {
   title: "Next.js",
@@ -13,8 +15,11 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
       </head>
       <body>
+        <Head>
+          
+        </Head>
         <ChakraProvider>
-          {children}
+          <Layout>{children}</Layout>
         </ChakraProvider>
       </body>
     </html>
