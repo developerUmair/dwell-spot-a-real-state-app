@@ -13,7 +13,7 @@ const Property = ({ property }) => {
             <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent='flex-start' cursor='pointer'>
                 <Flex flexWrap='wrap' w='420px' paddingTop='0' justifyContent='flex-start'>
                     <Box>
-                        <Image src={coverPhoto?.url} width={400} height={260} alt="cover-photo" />
+                        <Image src={coverPhoto?.url} width={400} height={260} layout="fixed" alt="cover-photo" />
                     </Box>
                     <Box>
                         <Flex paddingTop='2' alignItems='center' justifyContent='space-between'>
